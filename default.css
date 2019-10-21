@@ -3,16 +3,16 @@ body{
 }
 
 input{
-    height: 35px;
-    width: 446px;
+    height: 7%;
+    width: 80%;
     padding: 10px;
     text-align: right;
     border: inset;
 }
 
 button{
-    height: 50px;
-    width: 150px;
+    height: 10%;
+    width: 25%;
     background-color: hsl(255,50%,80%);
     border: outset;
 }
@@ -38,4 +38,19 @@ input, button{
 
 #txtResult{
     background-color: hsl(255,50%,80%);
+}
+
+#Calculator{
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: solid;
+    background-color: hsl(255,100%, 60%);
+    text-align: center;
+}
+
+[readonly]{
+    background-color: hsl(255,50%,80%);    
 }
