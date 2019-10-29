@@ -14,6 +14,8 @@ function initialize() {
     document.getElementById('buttonMinus').addEventListener('click', minusClick, false);
     document.getElementById('buttonClear').addEventListener('click', clear, false);
     document.getElementById('buttonClearEntry').addEventListener('click', clearEntry, false);
+    document.getElementById('buttonMult').addEventListener('click', multClick, false);
+    document.getElementById('buttonDiv').addEventListener('click', divClick, false);
     clear();
 }
 
@@ -30,6 +32,20 @@ function plusClick() {
 function minusClick() {
     txtResult.value = Number(txtResult.value) - Number(txtInput.value);
     clearEntry();
+}
+
+function multClick() {
+    txtResult.value = Number(txtResult.value) * Number(txtInput.value);
+    clearEntry();
+}
+
+function divClick() {
+    if(txtInput.value == '0'){
+        alert("No se puede dividir por 0" );
+    }else{
+        txtResult.value = Number(txtResult.value) / Number(txtInput.value);
+        clearEntry();s
+    }
 }
 
 function clear() {

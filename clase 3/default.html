@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script type="text/javascript" src="CalculatorLibrary.js"></script>
+    </head>
     <title>Web Calculator</title>
     <body>
-        <input id="textResult"><br>
-        <input id="textInput"><br>
+        <input id="txtResult" readonly="readonly" type="text"><br>
+        <input id="txtInput" ><br>
         <button id="button1">1</button>
         <button id="button2">2</button>
         <button id="button3">3</button><br>
@@ -19,6 +22,10 @@
         <button id="buttonResult">=</button>
         <button id="buttonClear">C</button>
         <button id="buttonClearEntry">CE</button>
+
+        <script type="text/javascript">
+            window.addEventListener('load', initialize, false);
+        </script>
 
     </body>
 </html>
