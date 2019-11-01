@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Web Calculator</title>
+        <link href="default.css" rel="stylesheet"  />
+        <script src="Scripts/jquery-3.4.1.js" ></script>
+        <script src="CalculatorLibrary.js" ></script>
+    </head>
+    <body >
+        <div id="container">
+            <header>
+                <hgroup>
+                    <h1>Contoso, Ltd.</h1>
+                    <h2>Your success equals our success.</h2>
+                </hgroup>
+            </header>
+            <nav>
+                <a href="https://www.google.com">link dummy a Google</a>
+            </nav>
+            <div role="main">
+                <div id="Calculator">
+                    <table>
+                        <tr>
+                            <td colspan="4">
+                                <input id="txtResult" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <input id="txtInput">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><button id="buttonClear">C</button></td>
+                            <td><button id="buttonClearEntry">CE</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="button7">7</button></td>
+                            <td><button id="button8">8</button></td>
+                            <td><button id="button9">9</button></td>
+                            <td><button id="buttonPlus">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="button4">4</button></td>
+                            <td><button id="button5">5</button></td>
+                            <td><button id="button6">6</button></td>
+                            <td><button id="buttonMinus">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="button1">1</button></td>
+                            <td><button id="button2">2</button></td>
+                            <td><button id="button3">3</button></td>
+                            <td><button id="buttonMult">x</button></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button id="button0">0</button></td>
+                            <td><button id="buttonDiv">/</button></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <aside>
+                <p>Advertisement</p>
+            </aside>
+            <footer>
+                <p>Copyright &copy; 2012, Contoso Ltd., Allrights reserved.</p>
+            </footer>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                calculadora.initialize();
+            });
+        </script>
+
+    </body>
+</html>
