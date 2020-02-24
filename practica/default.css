@@ -1,0 +1,3 @@
+table{border: 1px solid black; font-family: arial;}
+tr:nth-child(odd) {background-color: red;}
+tr td:nth-of-type(even) {background-color: blue;}
