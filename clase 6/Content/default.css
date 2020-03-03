@@ -110,6 +110,11 @@ aside{
     min-width: 125px;
 }
 
+#publicidad{
+    text-shadow: red 2px 2px 2px 2px;
+    font-size: xx-large;
+}
+
 footer{
     clear: both;
     width: 100%;

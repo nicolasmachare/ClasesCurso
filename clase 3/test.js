@@ -3,8 +3,8 @@ module('Calculator Test Suite', { setup: function () { initialize(); } });
 
 test("Initialize Test", function () {
     expect(2);
-    txtInput.value = '';
-    txtResult.value = '';
+    txtInput.value = '0';
+    txtResult.value = '0';
     var expected = '0';
     equal(txtInput.value, expected, 'Expected value: ' + expected +
     ' Actual value: ' + txtInput.value);

@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Web Calculator</title>
-        <link href="default.css" rel="stylesheet"  />
-        <script src="Scripts/jquery-3.4.1.js" ></script>
-        <script src="CalculatorLibrary.js" ></script>
+        <link href="Content/default.css" rel="stylesheet" type="text/css" />
+        <script src="Scripts/jquery-1.8.3.js" ></script>
+        <script src="Scripts/CalculatorLibrary.js" ></script>
     </head>
     <body >
         <div id="container">
@@ -33,31 +33,31 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><button id="buttonClear">C</button></td>
-                            <td><button id="buttonClearEntry">CE</button></td>
+                            <td><button id="btnClear">C</button></td>
+                            <td><button id="btnClearEntry">CE</button></td>
                         </tr>
                         <tr>
-                            <td><button id="button7">7</button></td>
-                            <td><button id="button8">8</button></td>
-                            <td><button id="button9">9</button></td>
-                            <td><button id="buttonPlus">+</button></td>
+                            <td><button id="btnNumber7">7</button></td>
+                            <td><button id="btnNumber8">8</button></td>
+                            <td><button id="btnNumber9">9</button></td>
+                            <td><button id="btnPlus">+</button></td>
                         </tr>
                         <tr>
-                            <td><button id="button4">4</button></td>
-                            <td><button id="button5">5</button></td>
-                            <td><button id="button6">6</button></td>
-                            <td><button id="buttonMinus">-</button></td>
+                            <td><button id="btnNumber4">4</button></td>
+                            <td><button id="btnNumber5">5</button></td>
+                            <td><button id="btnNumber6">6</button></td>
+                            <td><button id="btnMinus">-</button></td>
                         </tr>
                         <tr>
-                            <td><button id="button1">1</button></td>
-                            <td><button id="button2">2</button></td>
-                            <td><button id="button3">3</button></td>
+                            <td><button id="btnNumber1">1</button></td>
+                            <td><button id="btnNumber2">2</button></td>
+                            <td><button id="btnNumber3">3</button></td>
                             <td><button id="buttonMult">x</button></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><button id="button0">0</button></td>
+                            <td><button id="btnNumber0">0</button></td>
                             <td><button id="buttonDiv">/</button></td>
                             <td></td>
                         </tr>
@@ -65,7 +65,7 @@
                     </table>
                 </div>
             </div>
-            <aside>
+            <aside id="publicidad">
                 <p>Advertisement</p>
             </aside>
             <footer>
@@ -75,7 +75,7 @@
 
         <script type="text/javascript">
             $(document).ready(function () {
-                calculadora.initialize();
+                calculatorNamespace.initialize();
             });
         </script>
 
