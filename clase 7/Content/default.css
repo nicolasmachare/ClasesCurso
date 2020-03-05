@@ -42,9 +42,25 @@ input, button{
     background-color: hsl(255,50%,80%);
 }
 
+#Calculator{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: solid;
+    background-color: hsl(255,100%, 60%);
+    text-align: center;
+}
+
 
 [readonly]{
     background-color: hsl(255,50%,80%);    
+}
+
+[src="Content/Images/calculadora.jpg"]{
+    height: 80px; 
+    width: 70px;
 }
 
 *{
@@ -54,22 +70,22 @@ input, button{
 
 aside, footer, header, hgroup, nav{
     display: block;
-    padding: 15px;
 }
 
 header{
+    position: relative;
     height: 120px;
     background-image: url("Images/simbolo.jpg");
     background-repeat: no-repeat;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #headerText{
-    position: absolute;
+    /*position: absolute;*/
     top: 0px;
-    left: 5px;
-    margin-top: 5px;
+    left: 100px;
+    margin-top: 100px;
     width: 100%;
 }
 
@@ -101,6 +117,11 @@ aside{
     min-width: 125px;
 }
 
+#publicidad{
+    text-shadow: red 2px 2px 2px 2px;
+    font-size: xx-large;
+}
+
 footer{
     clear: both;
     width: 100%;
@@ -112,46 +133,58 @@ footer{
     min-width: 800px;
 }
 
-
-
-label{
-    float: left;
-    width:  125px;
-    height: 12px;
-    padding: 10px;
-    display: block;
-    clear: both;
+#ContenedorHome{
+    min-width: 400px;
+    min-height: 600px;
 }
 
-form  input {
-    border-width: medium;
-    border-color: hsl(255,100%,100%);
+table{
+    width: 100%;
+}
+
+td{
+    width: 25%;
+}
+
+label {
+    clear: both;
+    display: block;
+    float: left;
+    width: 125px;
+    height: 12px;
+    padding: 10px;
+}
+
+form input {
     width: 200px;
+    border-width: medium;
+    border-color: hsl(255, 100%, 100%);
     height: 12px;
     text-align: left;
     vertical-align: top;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     font-size: 12pt;
 }
 
-form button{
+form button {
     width: 100px;
     border-width: medium;
-    border-color: hsl(255,100%,100%);
+    border-color: hsl(255, 100%, 100%);
     vertical-align: top;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     font-size: 12pt;
     margin-top: 10px;
+    margin-right: 50%;
     margin-bottom: 10px;
     margin-left: 50%;
-    margin-right: 50%;
 }
+
 
 form textarea {
     font-family: Arial;
     font-size: 20pt;
     margin: 5px;
-    width: 250px;
+    width: 210px;
     border-width: medium;
     border-color: hsl(255, 100%, 100%);
     height: 100px;
