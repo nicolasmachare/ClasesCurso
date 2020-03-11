@@ -193,3 +193,25 @@ form textarea {
     font-family: Arial;
     font-size: 12pt;
 }
+
+#rojo{
+    background-color: red;
+    width: 30px;
+    height: 20px;
+}
+
+#verde{
+    background-color: green;
+    width: 30px;
+    height: 20px;
+}
+
+#azul{
+    background-color: blue;
+    width: 30px;
+    height: 20px;
+}
+
+#flexbox{
+    background-color: grey;
+}
