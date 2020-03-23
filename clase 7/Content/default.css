@@ -214,4 +214,19 @@ form textarea {
 
 #flexbox{
     background-color: grey;
+    display: -ms-flexbox;
+    -ms-flexbox-direction: row;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    width:550px;
+    height:400px;
 }
+
+table{
+    border: 1px solid black;
+    font-family: Arial;
+    height: 500px;
+}
+
+tr:nth-child(odd){background-color: red;}
+tr td:nth-of-type(even){background-color: blue;}
