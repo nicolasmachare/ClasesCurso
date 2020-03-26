@@ -13,6 +13,8 @@
 
         $('#btnPlus').on('click', calculator.plusClick);
         $('#btnMinus').on('click', calculator.minusClick);
+        $('#buttonMult').on('click', calculator.multClick);
+        $('#buttonDiv').on('click', calculator.divClick);
         $('#btnClearEntry').on('click', calculator.clearEntry);
         $('#btnClear').on('click', calculator.clear);
         calculator.clear();
@@ -32,6 +34,24 @@
             $('#txtResult').val(Number($('#txtResult').val()) +
             Number($('#txtInput').val()));
             Calculator.prototype.clearEntry();
+        };
+
+        Calculator.prototype.multClick = function () {
+            $('#txtResult').val(Number($('#txtResult').val()) *
+            Number($('#txtInput').val()));
+            Calculator.prototype.clearEntry();
+        };
+
+        Calculator.prototype.divClick = function () {
+
+            if (Number($('#txtInput').val()) != 0) {
+                $('#txtResult').val(Number($('#txtResult').val()) /
+                Number($('#txtInput').val()));
+                Calculator.prototype.clearEntry();
+            } else {
+                alert("no existe la division por 0");
+            }
+            
         };
 
         Calculator.prototype.minusClick = function () {

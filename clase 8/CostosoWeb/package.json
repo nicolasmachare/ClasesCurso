@@ -1,0 +1,20 @@
+{
+  "name": "costosoweb",
+  "version": "0.0.0",
+  "description": "Costoso Web Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Costoso",
+    "web",
+    "calculator"
+  ],
+  "author": "el Nico bien piola turro",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "1.x",
+    "express": "4.x"
+  }
+}

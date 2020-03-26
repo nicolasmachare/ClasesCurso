@@ -1,0 +1,232 @@
+body{
+    background-color: rgb(124, 232, 169);
+    font-family: Cambria, 'Times New Roman' , serif;
+    color: #0068AC;
+}
+
+input{
+    height: 7%;
+    width: 80%;
+    padding: 10px;
+    text-align: right;
+    border: inset;
+}
+
+button{
+    height: 10%;
+    width: 90%;
+    background-color: hsl(255,50%,80%);
+    border: outset;
+}
+
+button:hover{
+    background-color: hsl(255,50%,90%);
+}
+
+button:active{
+    border:inset;
+    border-width: thick;
+    border-color: hls(255,100%,100%);
+    background-color: hsl(255,50%,50%);
+}
+
+input, button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    border-width: thick;
+    border-color: hsl(255,100%,100%);
+    margin: 5px;
+}
+
+#txtResult{
+    background-color: hsl(255,50%,80%);
+}
+
+#Calculator{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: solid;
+    background-color: hsl(255,100%, 60%);
+    text-align: center;
+}
+
+
+[readonly]{
+    background-color: hsl(255,50%,80%);    
+}
+
+[src="Content/Images/calculadora.jpg"]{
+    height: 80px; 
+    width: 70px;
+}
+
+*{
+    margin: opx;
+    padding: opx;
+}
+
+aside, footer, header, hgroup, nav{
+    display: block;
+}
+
+header{
+    position: relative;
+    height: 120px;
+    background-image: url("Images/simbolo.jpg");
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#headerText{
+    /*position: absolute;*/
+    top: 0px;
+    left: 100px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+h1{
+    font-size: 64px;
+    height: 50px;
+}
+
+h2{
+    font-size: 20px;
+    height: 20px;
+    font-style: italic;
+}
+
+nav{
+    float: left;
+    width: 20%;
+    min-width: 125px;
+}
+
+div[role="main"]{
+    float: left;
+    width: 60%;
+}
+
+aside{
+   float: left;
+    width: 20%;
+    min-width: 125px;
+}
+
+#publicidad{
+    text-shadow: red 2px 2px 2px 2px;
+    font-size: xx-large;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 70px;
+    font-size: small;
+}
+
+#container{
+    min-width: 800px;
+}
+
+#ContenedorHome{
+    min-width: 400px;
+    min-height: 600px;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 25%;
+}
+
+label {
+    clear: both;
+    display: block;
+    float: left;
+    width: 125px;
+    height: 12px;
+    padding: 10px;
+}
+
+form input {
+    width: 200px;
+    border-width: medium;
+    border-color: hsl(255, 100%, 100%);
+    height: 12px;
+    text-align: left;
+    vertical-align: top;
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+form button {
+    width: 100px;
+    border-width: medium;
+    border-color: hsl(255, 100%, 100%);
+    vertical-align: top;
+    font-family: Arial;
+    font-size: 12pt;
+    margin-top: 10px;
+    margin-right: 50%;
+    margin-bottom: 10px;
+    margin-left: 50%;
+}
+
+
+form textarea {
+    font-family: Arial;
+    font-size: 20pt;
+    margin: 5px;
+    width: 210px;
+    border-width: medium;
+    border-color: hsl(255, 100%, 100%);
+    height: 100px;
+    text-align: left;
+    vertical-align: top;
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+#rojo{
+    background-color: red;
+    width: 30px;
+    height: 20px;
+}
+
+#verde{
+    background-color: green;
+    width: 30px;
+    height: 20px;
+}
+
+#azul{
+    background-color: blue;
+    width: 30px;
+    height: 20px;
+}
+
+#flexbox{
+    background-color: grey;
+    display: -ms-flexbox;
+    -ms-flexbox-direction: row;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    width:550px;
+    height:400px;
+}
+
+#tablita{
+    border: 1px solid black;
+    font-family: Arial;
+    height: 500px;
+}
+
+#tablita tr:nth-child(odd){background-color: red;}
+#tablita tr td:nth-of-type(even){background-color: blue;}
